@@ -33,3 +33,26 @@ section {
   margin: 40px 0;
 }
 
+@media (max-width: 768px) {
+  .about-skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about,
+  .skills {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query pour les écrans très petits (comme les téléphones très compacts) */
+@media (max-width: 480px) {
+  .about {
+    font-size: 14px;
+  }
+
+  .skills {
+    font-size: 14px;
+  }
+}
