@@ -11,7 +11,8 @@
 .contact h2 {
   margin-top: 0;
   font-size: 2.5em;
-  color: #9b59b6; /* Violet */
+  color: #9b59b6;
+  /* Violet */
   font-family: 'Georgia', serif;
   text-align: center;
 }
@@ -24,7 +25,8 @@
 
 .contact form label {
   font-weight: bold;
-  color: #9b59b6; /* Violet */
+  color: #9b59b6;
+  /* Violet */
   margin-bottom: 5px;
 }
 
@@ -39,14 +41,15 @@
 
 .contact form input:focus,
 .contact form textarea:focus {
-  border-color: #d7bde2; /* Violet clair */
+  border-color: #d7bde2;
+  /* Violet clair */
   box-shadow: 0 0 8px rgba(215, 189, 226, 0.5);
   outline: none;
 }
 
 .contact form button {
   padding: 15px;
-  background-color:  #9b59b6;
+  background-color: #9b59b6;
   color: white;
   border: none;
   border-radius: 5px;
@@ -61,4 +64,9 @@
 
 .contact form button:active {
   transform: translateY(0);
+}
+
+.contact form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { SERVICE_ID, TEMPLATE_ID, USER_ID } from './../emailjs.config';
-import './Contact.css'; 
+import './Contact.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +9,8 @@ const Contact = () => {
     email: '',
     message: ''
   });
+
+  const isFormValid = formData.name.trim() !== '' && formData.email.trim() !== '' && formData.message.trim() !== '';
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,6 +25,7 @@ const Contact = () => {
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert('Message envoyé avec succès !');
+        setFormData({ name: '', email: '', message: '' }); // Réinitialisation des champs
       })
       .catch((err) => {
         console.error('FAILED...', err);
@@ -46,7 +49,7 @@ const Contact = () => {
           Message :
           <textarea name="message" value={formData.message} onChange={handleChange} required></textarea>
         </label>
-        <button type="submit">Envoyer</button>
+        <button type="submit" disabled={!isFormValid}>Envoyer</button>
       </form>
     </section>
   );

@@ -1,13 +1,15 @@
 .projects {
   padding: 40px 20px;
-  background-color: #f5eef8; /* Violet très clair */
+  background-color: #f5eef8;
+  /* Violet très clair */
   text-align: left;
 }
 
 .projects h2 {
   margin-top: 0;
   font-size: 2.5em;
-  color: #9b59b6; /* Violet */
+  color: #9b59b6;
+  /* Violet */
   font-family: 'Georgia', serif;
 }
 
@@ -27,7 +29,8 @@
 .project h3 {
   margin-top: 0;
   font-size: 1.8em;
-  color: #9b59b6; /* Violet */
+  color: #9b59b6;
+  /* Violet */
 }
 
 .project p {
@@ -35,6 +38,20 @@
   color: #7f8c8d;
 }
 
+.project-preview img {
+  width: 100%;
+  /* L'image prend toute la largeur de la page */
+  height: 20vh;
+  /* L'image prend toute la hauteur de la fenêtre */
+  object-fit: cover;
+  /* L'image couvre toute la zone sans déformation */
+  display: block;
+  /* Supprime les marges autour de l'image */
+  border-radius: 8px;
+  /* Coins arrondis */
+}
+
+/* Media queries pour les petits écrans */
 @media (max-width: 768px) {
   .projects h2 {
     font-size: 2em;
@@ -51,6 +68,8 @@
 
   .project-preview img {
     margin-bottom: 10px;
+    max-width: 90%;
+    /* Limite la largeur de l'image */
   }
 
   .project h3 {
