@@ -1,0 +1,78 @@
+.projects {
+  padding: 40px 20px;
+  background-color: #f5eef8; /* Violet très clair */
+  text-align: left;
+}
+
+.projects h2 {
+  margin-top: 0;
+  font-size: 2.5em;
+  color: #9b59b6; /* Violet */
+  font-family: 'Georgia', serif;
+}
+
+.project {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+.project h3 {
+  margin-top: 0;
+  font-size: 1.8em;
+  color: #9b59b6; /* Violet */
+}
+
+.project p {
+  font-size: 1.1em;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .projects h2 {
+    font-size: 2em;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-preview {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-preview img {
+    margin-bottom: 10px;
+  }
+
+  .project h3 {
+    font-size: 1.5em;
+  }
+
+  .project-details p {
+    font-size: 1em;
+  }
+}
+
+/* Media queries pour les très petits écrans */
+@media (max-width: 480px) {
+  .projects h2 {
+    font-size: 1.5em;
+  }
+
+  .project h3 {
+    font-size: 1.2em;
+  }
+
+  .project-details p {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+.about-skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about {
+  flex: 3;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin: 40px 0;
+}
+
